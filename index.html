@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Project 1</title>
+</head>
+<body>
+    <div id="canvas-container" class="view-model">
+        <canvas id="canvas3d"></canvas>
+    </div>
+    <H1>Indroducing Raspberry-Pi 400</H1>
+    <div class="one">
+    <p>The Raspberry Pi 400 is a compact computer built into a keyboard, providing a complete and portable computing solution. It features a quad-core ARM processor, generous RAM, and ample connectivity options including USB ports, HDMI output, and GPIO pins. With its built-in Wi-Fi and Bluetooth, the Raspberry Pi 400 is perfect for a variety of projects ranging from coding and programming to media streaming and productivity tasks. Its simplicity, affordability, and versatility make it an ideal choice for beginners, enthusiasts, and educators alike.</p>
+</div>
+<div class="two">
+    <h1>This is the random text reading this you have successfully wasted your 3 or may be 4 seconds!!</h1>
+    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ipsam, doloremque amet? Dignissimos numquam ut iste, illo et officiis veniam dolore impedit consequuntur aperiam quia aut suscipit quos facere, mollitia cumque distinctio placeat neque autem labore eaque nihil saepe qui! Eaque fuga molestiae debitis ratione saepe quod molestias, est, praesentium quas accusantium numquam, id veniam incidunt voluptates animi harum sed porro natus? Aspernatur neque tempore quae. Ducimus explicabo necessitatibus saepe culpa numquam in ad, cupiditate dolore laborum magni nihil, similique, dolores hic eveniet! Pariatur aut eligendi temporibus inventore voluptate mollitia! Ex ducimus hic aspernatur vel! Ipsum molestias molestiae eos tempora assumenda cumque. Corrupti nulla ullam culpa voluptate eius, repellat temporibus recusandae expedita accusantium, quidem corporis dignissimos illum aspernatur. Dolorum quibusdam ratione, sed illum eveniet magnam totam hic amet expedita, fugiat quisquam? Placeat voluptatem repudiandae at unde qui quasi quis provident dicta quae. Expedita, ab maiores? Voluptate assumenda ipsam ut, est eveniet perspiciatis nemo tempora saepe labore laudantium a delectus maiores, totam quam ab, voluptatibus veritatis voluptates tempore sed blanditiis. Quis repellat quas deleniti reiciendis modi quasi possimus sit autem veniam dolor et doloremque libero, mollitia inventore magnam facilis atque consectetur dolores perspiciatis aperiam vel illo aut. Dolore saepe placeat molestiae? Saepe natus, quo nobis minima iusto eos rerum aperiam tempore rem ipsum alias explicabo iste ratione. Molestiae inventore obcaecati consectetur quia nulla deleniti, quaerat eum. Quidem, laboriosam voluptatibus inventore distinctio cumque perspiciatis eveniet id eaque, similique corrupti porro accusamus sit quo! Quis consectetur iste sit ducimus atque tempora blanditiis nisi saepe molestiae expedita, facere exercitationem vel quia voluptatibus. Unde maiores porro magnam sequi itaque ullam accusantium alias aliquid blanditiis fugit dolores enim, distinctio iste eos ipsa nisi voluptate, deleniti corrupti, est rerum nesciunt cumque officia deserunt consequuntur. Accusamus, ea quaerat magnam quidem temporibus corporis, quos voluptatum officiis reprehenderit voluptas a ipsa.</p>
+</div>
+
+<div class="three">
+    <h1>This is The model  for $50</h1>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus sint temporibus sunt magni quibusdam harum aperiam velit eaque cupiditate esse voluptatibus nostrum autem, nisi asperiores doloremque iste similique porro nulla a pariatur eos sit atque. Corrupti cupiditate quisquam similique placeat officiis maxime sapiente sint! Eum temporibus error eius veritatis laboriosam culpa reiciendis dicta earum eos tenetur odit odio labore consequatur voluptate sunt similique aspernatur est quae assumenda sequi nihil, optio consectetur! Assumenda a iure accusantium quia quasi, nisi voluptas dicta accusamus veniam, nam dolorum explicabo, obcaecati possimus expedita illum cum similique optio. Optio, et quo aut asperiores velit amet officiis nulla minima sapiente tempora commodi non similique eos distinctio iste sunt nobis labore odit qui aliquam quaerat. Explicabo cupiditate non vitae, perferendis aliquam repudiandae asperiores expedita corrupti consectetur odit voluptatum, ex fugiat, ipsa aut reprehenderit accusantium quo provident corporis ab amet laudantium suscipit quia! Qui, minima aut magnam, fugiat vel corrupti, sunt harum ipsa vitae cum debitis nisi voluptate? Perferendis ex aut amet distinctio molestiae aspernatur, itaque vitae debitis libero optio dolores maxime veniam voluptatem error quae sapiente temporibus alias inventore provident architecto veritatis iste numquam dolorum! Voluptatibus, porro ducimus accusamus libero in alias nulla vero cum ut consequuntur vel.</p>
+    <button id="view">View Model</button>
+    <button id="close">close view mode</button>
+</div>
+
+<script>
+ let model = document.getElementById("canvas-container");
+let viewButton = document.getElementById("view");
+const closeButton = document.getElementById("close");
+viewButton.addEventListener("click", viewModel);
+closeButton.addEventListener("click", closeModel);
+model.style.pointerEvents = "none";
+function viewModel() {
+   model.style.pointerEvents = "auto"
+}
+function closeModel(){
+    model.style.pointerEvents= "none";
+}
+</script>
+
+<script src="https://unpkg.com/@studio-freight/lenis@1.0.42/dist/lenis.min.js"></script> 
+<script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js"></script>
+
+<script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/ScrollTrigger.min.js"></script>
+<script src="anime.js" type="module"></script>
+</body>
+</html>

@@ -1,0 +1,46 @@
+body{
+    margin: 0;
+    padding: 0;
+    background-color: black;
+    color: white;
+    cursor:url('cursor2.png'),auto;
+
+}
+#canvas-container {
+    position: fixed;
+    top: 0;
+    z-index: 4;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    
+}
+
+#canvas3d {
+    width: 100%;
+    height: 100%;
+}
+.one{
+    width: 70vw;
+    color: green;
+    cursor:url("./cursor.svg");
+
+}
+.one p{
+    font-size: 30px;
+}
+.two{
+    width: 60vw;
+    margin-top: 25vh;
+    margin-left: 30vw;
+}
+.three{
+    width: 60vw;
+    margin-top: 25vh;
+}
+button{
+    margin-left: 20vw;
+    margin-bottom: 5vh;
+    width: 100px;
+    height: 40px;
+}
